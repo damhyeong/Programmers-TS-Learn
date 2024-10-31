@@ -1,22 +1,21 @@
 import React from 'react';
 import './App.css';
+import TestClass from "./TestClass";
+import TestFunc from "./TestFunc";
+import TodoList from "./TodoList";
+import Timer from "./Timer";
+import Clock from "./Clock";
 
 function App() {
     let name = "React"
 
-    const style = {
-        backgroundColor : "black",
-        color : "white",
-        fontSize : "2rem",
-        padding : "1rem",
-    }
-
   return (
-    <div style={style}>
-        {
-            name === "리액트" ? (<h1>YES</h1>) : (<h1>NO</h1>)
-        }
-        <p>HI!!</p>
+    <div className="container">
+        <TestClass/>
+        <TestFunc/>
+        <TodoList/>
+        <Timer/>
+        <Clock/>
     </div>
   );
 }
